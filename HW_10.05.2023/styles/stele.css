@@ -1,0 +1,670 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: none;
+    box-sizing: border-box;
+}
+/* section 1 */
+.section1{
+    max-width: 1920px;
+    background-image: url(../imsges/bgc.svg) ;
+    background-size: cover;
+    background-position: center center;
+    padding-top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 523px;
+    
+}
+.navBar{
+    display: flex;
+    gap: 110px;
+    height: 52px;
+    align-items: center;
+}
+.wrapper{
+    max-width: 1920px;
+}
+.nav{
+    background-color: #333333;
+    padding: 60px 0;
+}
+.navLink{
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+.navChoise{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 405px;
+    width: 321px;
+}
+.choiseWrap{
+    align-items: center;
+}
+.serch{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 405px;
+    width: 348px;
+}
+.serchWrap{
+    display: flex;
+    justify-content: space-between;
+    width: 78px;
+}
+.registrationWrap{
+    display: flex;
+    justify-content: space-between;
+    width: 230px;
+}
+.navPoint{
+    cursor: pointer;
+}
+.slogan{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 49px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.sloganWrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 80px;
+}
+.catalogBtn{
+    color: #FFFFFF;
+    align-items: center;
+    width: 216px;
+    height: 51px;
+    padding: 0 7px;
+    background-color: transparent;
+    border: 1px solid white;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+.bottomPart{
+    border-top: 1px solid white;
+    padding: 30px 405px;
+}
+.bottomItems{
+    display: flex;
+
+}
+.brandBox{
+    border-right: 1px solid white;
+}
+/* section 2 */
+.section2{
+    max-width: 1920px;
+    padding: 110px 405px;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.produktInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.events{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 140%;
+    text-align: center;
+    color: #333333;
+    text-decoration: none;
+}
+.sectionSloganWrapper{
+    margin: 15px 0 60px;
+}
+.sectionSlogan{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 41px;
+    text-align: center;
+    color: #333333;
+}
+.classChoise{
+    width: 171px;
+    height: 61px;
+    background-color: white ;
+    border: 1px solid #D6D6D6;
+    box-shadow: 0px 4px 4px rgb(73, 72, 72) ;
+    margin-bottom: 55px;
+}
+.produktImges{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+.produktimage{
+    width: 350px;
+    height: 280px;
+}
+.img1{
+    background-image: url(../imsges/rings.svg);
+}
+.img2{
+    background-image: url(../imsges/earrings.svg);
+}
+.img3{
+    background-image: url(../imsges/pendants.svg);
+}
+.img4{
+    background-image: url(../imsges/cufflinks.svg);
+}
+.img5{
+    background-image: url(../imsges/bracelets.svg);
+}
+.img6{
+    background-image: url(../imsges/watch.svg);
+}
+/* section 3 */
+
+.section3{
+    max-width: 1920px;
+    background-image: url(../imsges/Rectangle\ 6.svg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.qestionWrapper{
+    margin: 97px 0 15px;
+}
+.qestion{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 140%;
+    text-align: center;
+    color: #FFFFFF;
+    
+}
+.inventationTextWrap{
+    width: 720px;
+    height: 100px;
+}
+.inventationText{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    text-align: center;
+    color: #FFFFFF;
+}
+.buttonWrapper{
+    margin: 50px 0 100px;
+}
+.sallons{
+    padding: 15px 35px;
+    background-color: #FFFFFF;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #333333;
+}
+/* section 4 */
+
+.section4{
+    max-width: 1920px;
+    padding: 110px 405px;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.articlesWrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 120px;
+
+}
+.articlPar{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 140%;
+    text-align: center;
+    color: #333333;
+
+}
+.advices{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 41px;
+    text-align: center;
+    color: #333333;
+
+}
+.advicesContainer{
+    margin: 90px 0 60px ;
+    display: flex;
+}
+.adviceimg{
+    width: 350px;
+    height: 370px;
+}
+.advice1{
+    background-image: url(../imsges/blog__item1.svg);
+}
+.advice2{
+    background-image: url(../imsges/blog__item2.svg);
+    margin: 0 30px;
+}
+.advice3{
+    background-image: url(../imsges/blog__item3.svg);
+}
+.blogRead{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background-color: #333333;
+    padding: 15px 35px;
+}
+.brend{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 140%;
+    text-align: center;
+    color: #333333;
+}
+.socialTitle{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 41px;
+    text-align: center;
+    color: #333333;
+}
+.socialContentContainer{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 1px;
+}
+.socialTitleWrap{
+    margin: 15px 0 60px;
+}
+/* section 5 */
+
+.section5{
+    max-width: 1920px;
+    background-image: url(../imsges/Rectangle\ 6.svg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+}
+.personalAdvices{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 140%;
+    text-align: center;
+    color: #FFFFFF;
+}
+.personalSendings{
+    font-family: 'Noto Serif';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 41px;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 15px 0 60px;
+}
+.vipServicesWrap{
+    display: flex;
+    margin-bottom: 120px;
+}
+.personalLink{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-left: 20px;
+}
+.emailForm{
+    width: 418px;
+    height: 85px;
+    background-color: #FFFFFF;
+    padding: 20px;
+    margin-left: 80px;
+    display: flex;
+    gap: 15px;
+}
+.emailInput{
+    width: 200px;
+    height: 45px;
+    border: 1px solid #D6D6D6;
+    padding: 15px 20px;
+}
+.submitButton{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background-color: black;
+    width: 159px;
+    height: 45px;
+}
+/* section 5 */
+
+.section6{
+    max-width: 1920px;
+    padding: 80px 405px 20px;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.ourInfos{
+    display: flex;
+    gap: 30px;
+}
+.infoContainer{
+    width: 255px;
+    
+}
+.infoTitleContainer{
+    height: 28px;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+.infoTitle{
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 140%;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #333333;
+}
+.infoText{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #333333;
+    text-decoration: none;
+}
+.infoTextWrapp{
+    margin-top: 10px;
+}
+.paymentSystems{
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+.contactsWrap{
+    margin-top: 15px;
+}
+.socialLinks{
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+.copyrights{
+    border-top: 1px solid black;
+    margin-top: 60px;
+    display: flex;
+    gap: 185px;
+    
+}
+
+/* contakt page */
+.contactsSection{
+    max-width: 1920px;
+    padding: 60px 405px 0;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.navWrap{
+    display: flex;
+    gap: 15px;
+}
+.contactsTitleWrapper{
+    margin: 60px 0 40px;
+}
+.contactInfo{
+    display: flex;
+    gap: 110px;
+    margin-bottom: 120px;
+}
+.contactInfoText{
+    display: flex;
+    gap: 10px;
+}
+.contactTextInfo{
+    margin-left: 30px;
+}
+/*  catalog page */
+
+
+.selectWrap{
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+}
+.selektText{
+    width: 160px;
+    display: flex;
+    justify-content: space-between;
+}
+.productContainer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.productItem{
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+
+}
+.divideLine{
+    width: 100%;
+    border-top: 1px solid black;
+    margin: 60px 0;
+}
+.showMoreBtn{
+    color: #FFFFFF;
+    align-items: center;
+    width: 216px;
+    height: 51px;
+    padding: 0 7px;
+    background-color: black;
+    border: 1px solid white;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin: 75px 165px;
+}
+.deliveryWrap{
+    padding: 90px;
+    display: flex;
+    gap: 100px;
+}
+.deliverytext{
+    position: relative;
+    width: 540px;
+    height: 240px;
+    overflow: hidden;
+}
+.deliverytext2{
+    position: relative;
+    width: 540px;
+    height: 240px;
+    overflow: scroll;
+}
+.DeliveryInnerText{
+    position: absolute;
+    z-index:1;
+}
+.background{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index:2;
+    background-image: linear-gradient(to bottom, rgba(34, 4, 4, 0.1),rgba(255, 255, 255,1));
+}
+.readMore{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 2;
+    background-color: #FFFFFF;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #333333;
+}
+.diliveryImgWrap{
+    display: flex;
+    width: 277px;
+    gap: 60px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+/* item detail page */
+
+.itemDetails{
+    display: flex;
+    gap: 30px;
+    margin: 50px 0 120px;
+}
+.smallImages{
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+}
+.itemDetailsText{
+    border: 1px solid #979797
+}
+.innerItemtext{
+    margin: 5px;
+    display: flex;
+    padding: 30px;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    border: 1px solid #979797;
+}
+.itemtitle{
+    display: flex;
+    gap: 25px;
+}
+.itemCategory{
+    display: flex;
+    gap: 15px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #979797;
+}
+.itemBrand{
+    display: flex;
+    gap: 15px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #979797;
+
+}
+.divideLine2{
+    width: 100%;
+    border-top: 1px solid black;
+}
+.shopContainer{
+    display: flex;
+    gap: 30px;
+}
+.produktShop{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.ourOfers{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* mobile 1 */
+
+.WrappMobile{
+    max-width: 375px;
+}
+.secton1Mobile{
+    background-image: url(../imsges/bgc.svg) ;
+    background-size: cover;
+    background-position: center center;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 250px;
+}
+.mobileHeader{
+    display: flex;
+    gap: 40px;
+}
