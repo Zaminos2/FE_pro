@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+footer{
+    background-image: url(../asets/images/first-screen.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 2%;
+}
+.footerWrap{
+    width: 58%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1%;
+}

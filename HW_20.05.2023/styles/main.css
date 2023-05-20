@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.bigestProjekts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.projektTitle{
+    margin: 10% 0 5%;
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 53px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #404149;
+}
+.projektItems{
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.projektItem{
+    min-width: 240px;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.projektItem2{
+    justify-content: center;
+    align-items: center;
+    padding: 15%;
+}
+.redLine{
+    height: 6px;
+    width: 16%;
+    background-color: red;
+}
+.projektName{
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: #404149;
+}
+.projektText{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #999999;
+}
+.smartestProjekts{
+    margin-top: 5%;
+    padding: 2%;
+    background-color: #F7654A;
+    display: flex;
+    justify-content: center;
+}
+.smartWrapp{
+    width: 58%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.smartTitle{
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 71px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+}
+.smartText{
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+}
+.request{
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.05em;
+    color: #000000;
+    padding: 15px 45px;
+}
+.projektLink{
+    text-decoration: none;
+}
+.innerProjektitem{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.projekt_icon{
+    margin-bottom: 10%;
+}
+.contactTitle{
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    color: #999999;
+    margin: 10% 0;
+}
+.hsitoryCases2{
+ width: 220px;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+.emailLink{
+    color: #F7654A;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+.contactText{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
