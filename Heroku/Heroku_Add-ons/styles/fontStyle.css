@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+span{
+    color: black;
+    font-size: 11px;
+}
+.mainTitle{
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 1.2;
+    margin-bottom: 1%;
+}
+.brandLogo{
+    background-image: url(../asets/icons/brandImg_2.png);
+    height: 48px;
+    width: 48px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.ourTools{
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 3%;
+}
