@@ -65,8 +65,8 @@
 .headerMain{
     padding: 10px 25px;
     display: flex;
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
     background-color: #4f4792;
     color: #c7b8d8;
 }
@@ -102,10 +102,10 @@
 .searchInput{
     background-color: transparent;
     border: none;
-    max-width: 1px;
 }
 .searchInput::placeholder{
     color: white;
+    display: flex;
 }
 .searchButton{
     width: 14px;
@@ -118,3 +118,11 @@
     padding: 5px;
     border-radius: 4px;
 }
+.logoWrapp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    max-width: 1200;
+}
+
