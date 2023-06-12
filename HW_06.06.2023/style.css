@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #c583e4;
+}
+.navBar{
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    width: 60%;
+    background-color: #e3d2eb;
+    gap: 10%;
+}
+.liksWrapp{
+    display: flex;
+    gap: 5%;
+    
+}
+.mobileNav{
+    display: none;
+    border: none;
+}
+.mobileIcon{
+    height: 18px;
+    width: 18px;
+    color: #b191c0;
+}
+.mobileWrapp{
+ width: 35%;
+ background-color: white;
+ display: flex;
+ flex-direction: column;
+ text-align: center;
+ display: none;
+ margin: 20% 0;
+
+}
+.mobileWrapp{
+    width: 35%;
+    height: 200px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    display: none;
+    margin: 20% 0;
+   
+}
+.mobileWrapp2{
+    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 20% 0;
+}
+.navLinks{
+    text-decoration: none;
+    margin: 25px 0 10px ;
+}
+@media(max-width: 800px){
+    .mobileNav{
+        display: block;
+    }
+    .liksWrapp{
+        display: none;
+    }
+}
