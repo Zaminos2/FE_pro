@@ -1,0 +1,29 @@
+.mainTitle{
+    font-size: 36px;
+    font-weight: 300;
+    text-align: center;
+}
+.devText{
+    font-size: 16px;
+    line-height: 1.65;
+    color: #323839;
+}
+.devTitle{
+    color: #4A90E2;
+    font-size: 30px;
+    font-weight: 300;
+}
+.itemTitle{
+    font-size: 24px;
+    color: #79589F;
+    font-weight: 300;
+}
+.itemText{
+    font-size: 14px;
+    font-weight: 400;
+    color: #3F3F44;
+}
+.infoInnerLink{
+    text-decoration: none;
+    cursor:pointer;
+}

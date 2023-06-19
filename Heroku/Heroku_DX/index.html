@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./styles/headerStyle.css">
+    <link rel="stylesheet" href="./styles/media.css">
+    <link rel="stylesheet" href="./styles/fontStyles.css">
+    <link rel="stylesheet" href="./styles/mainstyle.css">
 </head>
 
 <body>
@@ -13,7 +17,7 @@
             <div class="helmetNavWrap">
                 <a href="https://developer.salesforce.com" class="navLi navLink">
                     <img src="./asets/icons/cloud_icon.png" alt="altImg">
-                    <span> Salesforce Developers</span>
+                    <span class="helmSpan"> Salesforce Developers</span>
                 </a>
                 <span>/</span>
                 <span>Heroku</span>
@@ -33,7 +37,9 @@
                             <a class="navLink" href="https://www.heroku.com/products">Produkts</a>
                             <div class="navDrop">
                                 <div class="navContainer2">
-                                    <a class="innerLink" href="">Heroku Projekts</a>
+                                    <div class="innerLinkWrap">
+                                        <a class="innerLink" href="">Heroku Projekts</a>
+                                    </div>
                                     <div class="navDrop2">
                                         <a href="">Hello</a>
                                     </div>
@@ -67,17 +73,86 @@
                 </a>
             </div>
             <div class="logoWrapp">
+                <h1 class="mainTitle">Welcome to Heroku DX</h1>
                 <div class="brandLogo">
+                    <img class="brandLogoImg" src="https://www0.assets.heroku.com/assets/dx/dx_hero_2x-2076b06fa87ba55acd508c52e242e51a697258aacfe5a1b506c869ea8f486e3a.png" alt="">
                 </div>
-                <h1 class="mainTitle">Heroku Add-ons</h1>
-                <h5 class="ourTools">Tools and services for developing, extending, and operating your app.</h5>
             </div>
         </section>
     </header>
-    <main></main>
-    <footer></footer>
+    <main>
+        <section class="mainNav">
+            <div class="mainNavWrap">
+                <a class="toolsLink" href="">
+                    <div class="mainNavTools">
+                        <p class="toolsText">Platforms</p>
+                    </div>
+                </a>
+                <span>/</span>
+                <a class="toolsLink" href="">
+                    <div class="mainNavTools">
+                        <p class="toolsText">Heroku DX</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+        <section class="devInfo">
+            <div class="devInfoWrap">
+                <h2 class="devTitle">Evolving the Developer Experience. Again.</h2>
+                <p class="devText">At Heroku, we believe that great apps come from developers using tools they love. That’s why a great developer experience has always been at the very heart of what we do. Heroku makes the processes of deploying, configuring, scaling, tuning, and managing apps as simple and straightforward as possible, so developers can focus on what’s most important: building great apps that delight and engage customers.</p>
+                <p class="devText">Heroku DX pervades Heroku.  Here are three developer experience features that provide better control surfaces, deeper performance insights, easier database management, and a powerful one-click method for configuration and deployment.</p>
+            </div>
+        </section>
+        <section class="mainInfo">
+            <div class="mainInfoWrap">
+                <div class="infoContainer">
+                    <div class="infoItem">
+                        <img class="infoImg1" src="https://www0.assets.heroku.com/assets/dx/screenshot_metrics_2x-6f108fae5b570e121b78da2f98ea82a32dc847e65dc3df7fcdb64cbddce3d883.png" alt="">
+                    </div>
+                    <div class="infoItem2">
+                        <div class="itemTitleWrap">
+                        <h3 class="itemTitle">Heroku Dashboard + Metrics</h3>
+                        </div>
+                        <p class="itemText">The Heroku Dashboard is at the center of the developer’s Heroku experience. Dashboard is where you manage all of your apps and organizations, scale your deployments up or down, and manage databases and add-ons. The Heroku Dashboard makes all of this much easier and more intuitive, with thoughtfully designed workflows and UI.</p>
+                        <p class="itemText">Heroku Metrics, a feature within Dashboard available to paid apps, gives you powerful insights on the runtime characteristics of your applications, allowing you to seamlessly monitor and fine tune performance within your regular workflow. You have direct visibility into your app’s throughput, response time, errors, memory, and CPU load data, all delivered in an intuitive display designed to help you spot and resolve problems. Visit the <a href="https://www.heroku.com/platform/opex" class="infoInnerLink"> Heroku operational experience</a> page to learn more about Heroku Metrics and other integrated features you can use to maintain application health, increase visibility, and diagnose issues." </p>
+                    </div>
+                </div>
+                <div class="infoContainer">
+                    <div class="infoItem2">
+                        <div class="itemTitleWrap">
+                        <h3 class="itemTitle">Heroku Dashboard + Metrics</h3>
+                        </div>
+                        <p class="itemText">Heroku Buttons make the experience of cloning code and deploying an app as easy as a single click. There are already <a href="https://elements.heroku.com/buttons" class="infoInnerLink">thousands of Heroku Buttons</a> available — click any one of them and the source code will get cloned into your Heroku account, then the app will be provisioned, configured, and deployed automatically. Within a few seconds, you’ll have a fully-configured app there in your Dashboard, complete with database and add-ons, ready for you to get to work — as well as deployed live to the web. Got an app or a project you’d like a Heroku Button for? It’s easy to <a href="https://devcenter.heroku.com/articles/heroku-button" class="infoInnerLink">create a Heroku Button</a> , just build an apps.json manifest for your app and all its dependencies, then follow a few additional steps to make it live.</p>
+                    </div>
+                    <div class="infoItem">
+                        <img src="https://www3.assets.heroku.com/assets/dx/screenshot_button_2x-d14400ce06c31b1e398cf1d899005606e451c68738d9582bba65be16d49b2ec7.png" alt="" class="infoImg1">
+                    </div>
+                </div>
+                <div class="infoContainer">
+                    <div class="infoItem">
+                        <img src="https://www2.assets.heroku.com/assets/dx/screenshot_postgres_2x-eaa77c0f2cd666548df970f941c6ebd51d457e19e33ada58343ad7c5213a3afd.png" alt="" class="terminal1">
+                        <div class="terminalWrap">
+                            <div class="terminalHead">
+                                <span class="circle"></span>
+                                <span class="circle"></span>
+                                <span class="circle"></span>
+                            </div>
+                            <img src="https://www1.assets.heroku.com/assets/dx/screenshot_postgres_terminal_2x-0bdf34a41261c46458618ca11dafea4927fb51bc99d4dd634cf4b3b5bb6650c9.png" alt="" class="terminal2">
+                        </div>
+                    </div>
+                    <div class="infoItem2"></div>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+    <footer>
+
+    </footer>
 
 </body>
 <script src="./scripts/index.js"></script>
+<script src="https://kit.fontawesome.com/8ccdee7cf0.js" crossorigin="anonymous"></script>
 
 </html>
