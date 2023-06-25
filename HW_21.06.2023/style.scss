@@ -3,14 +3,81 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+$myMargins: 2% 0;
+
 @mixin containerstyles {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background-color: aqua;
+    background-color: rgb(166, 187, 187);
+}
+@mixin inputsStyle{
+    width: 20%;
+    height: 50px;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 8px;
+    border: 1px solid rgb(19, 131, 131);
+    margin: $myMargins;
+
 }
 .container{
     @include containerstyles();
+    .getUserInfo{
+        @include inputsStyle();
+    }
+    .start{
+        @include inputsStyle();
+        width:5%;
+        cursor: pointer;
+    }
+    .userChange{
+        width: 16%;
+        display: flex;
+        justify-content: center;
+        padding: 1% 0;
+        gap: 2%;
+        
+        button{
+            @extend .start;
+            width: 20%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    .infoContainer{
+        padding: 3%;
+        display: flex;
+        justify-content: center;
+        .user-container{
+            background-color: white;
+            width: 70%;
+            border-radius: 20px;
+            .user{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                h2{
+                    text-align: center;
+                }
+            }
+            .posts{
+                display: flex;
+                gap: 1%;
+                flex-wrap: wrap;
+                padding: 1%;
+
+                .infoItem{
+                    width: 30%;
+                    border: 1px solid rgb(129, 104, 80);
+                    border-radius: 20px;
+                    margin: 1% 0;
+                    padding: 1%;
+                }
+            }
+        }
+    }
 }
