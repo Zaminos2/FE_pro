@@ -7,6 +7,33 @@ let userEmail;
 let lastKey;
 const lastUser = localStorage.getItem("lastUser");
 
+async function infoRecive(value){
+  const url = `https://jsonplaceholder.typicode.com/users/${value}`;
+  const url2 = `https://jsonplaceholder.typicode.com/posts?userId=${value}`;
+
+  try {
+    const response1 = await fetch(url);
+    const response2 = await fetch(url2);
+
+    if (response1.ok && response2.ok) {
+   
+      const data1 = await response1.json();
+      const data2 = await response2.json();
+
+      return {
+        userData: data1,
+        postData: data2,
+      };
+    }else{
+      const error = `<h2>Error ${response1.status}\n Error ${response2.status}`
+      container.insertAdjacentHTML("afterbegin",error);
+    }
+  } catch (error) {
+    console.log('Error fetching data:', error);
+    throw error;
+  }
+
+}
 async function getInfo() {
   const id = input.value;
   if (localStorage.getItem(`userId${id}`) !== null) {
@@ -15,59 +42,12 @@ async function getInfo() {
     localStorage.setItem(`userId${id}`, id);
     localStorage.setItem("lastUser",id)
   }
-  
-  const url = `https://jsonplaceholder.typicode.com/users/${id}`;
-  const url2 = `https://jsonplaceholder.typicode.com/posts?userId=${id}`;
-
-  try {
-    const response1 = await fetch(url);
-    const response2 = await fetch(url2);
-
-    if (!response1.ok || !response2.ok) {
-      throw new Error('Request failed with status: ' + response1.status + ', ' + response2.status);
-    }
-
-    const data1 = await response1.json();
-    const data2 = await response2.json();
-
-    return {
-      userData: data1,
-      postData: data2,
-    };
-  } catch (error) {
-    console.log('Error fetching data:', error);
-    throw error;
-  }
+  return await infoRecive(id);
 }
-
 async function getLocalId() {
     if(localStorage.getItem("lastUser") !== null){
       const id = lastUser;
-    
-      const url = `https://jsonplaceholder.typicode.com/users/${id}`;
-      const url2 = `https://jsonplaceholder.typicode.com/posts?userId=${id}`;
-
-      try {
-        const response1 = await fetch(url);
-        const response2 = await fetch(url2);
-
-        if (response1.ok && response2.ok) {
-       
-          const data1 = await response1.json();
-          const data2 = await response2.json();
-
-          return {
-            userData: data1,
-            postData: data2,
-          };
-        }else{
-          const error = `<h2>Error ${response1.status}\n Error ${response2.status}`
-          container.insertAdjacentHTML("afterbegin",error);
-        }
-      } catch (error) {
-        console.log('Error fetching data:', error);
-        throw error;
-      }
+       return await infoRecive(id);
      }else{
       const warning = "<p>Please enter user id</p>"
       container.insertAdjacentHTML("afterbegin",warning);
