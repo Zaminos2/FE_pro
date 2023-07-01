@@ -1,0 +1,29 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+@mixin main{
+    background-color: rgb(203, 155, 212);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+.formWrap{
+    @include main();
+    form{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        .checkboxWrap{
+            display: flex;
+            justify-content: center;
+            margin: 10% 0;
+            gap: 20%;
+        }
+    }
+}
