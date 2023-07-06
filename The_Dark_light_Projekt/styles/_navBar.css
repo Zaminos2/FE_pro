@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: rgb(51, 61, 161);
+  padding: 1% 0;
+}
+.navigation .navWrap {
+  width: 90%;
+  max-width: 1300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 7%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.navigation .navWrap .navSocial {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 10%;
+}
+.navigation .navWrap .navSocial .socialContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 5%;
+}
+.navigation .navWrap .navSocial .socialContainer .socialItem {
+  cursor: pointer;
+}
+.navigation .navWrap .navLinksCont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 58%;
+  max-width: 755px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  gap: 25%;
+}
+.navigation .navWrap .navLinksCont .linksContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10%;
+}
+.navigation .navWrap .navLinksCont .linksContainer .pageLiks {
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+  text-decoration: none;
+}
+.navigation .navWrap .navLinksCont .order {
+  background-color: yellow;
+  width: 42%;
+  max-width: 222px;
+  font-size: 25px;
+  font-weight: 200;
+}

@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+@mixin navMain{
+display: flex;
+justify-content: center;
+background-color: rgb(51, 61, 161);
+padding: 1% 0;
+}
+.navigation{
+@include navMain();
+    .navWrap{
+        width: 90%;
+        max-width: 1300px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 7%;
+        flex-wrap: wrap;
+        .navSocial{
+            display: flex;
+            justify-content: flex-start;
+            gap: 10%;
+            .socialContainer{
+                display: flex;
+                justify-content: flex-start;
+                gap: 5%;
+                .socialItem{
+                    cursor: pointer;
+                }
+            }
+        }
+        .navLinksCont{
+            display: flex;
+            width: 58%;
+            max-width: 755px;
+            justify-content: flex-end;
+            gap:25%;
+            .linksContainer{
+                display: flex;
+                align-items: center;
+                gap: 10%;
+                .pageLiks{
+                    color: white;
+                    font-size: 20px;
+                    font-weight: 400;
+                    text-decoration: none;
+                }
+            }
+            .order{
+                background-color: yellow;
+                width: 42%;
+                max-width: 222px;
+                font-size: 25px;
+                font-weight: 200;
+            }
+        }
+        
+    }
+}

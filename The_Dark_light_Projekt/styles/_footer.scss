@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+@mixin homeMain{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(51, 61, 161);
+    padding: 5% 0;
+    }
+.footer{
+    @include homeMain();
+    .footerwrap{
+        width: 90%;
+        max-width: 1300px;
+        display: flex;
+        justify-content: space-between;
+        .footerContainer{
+            width: 20%;
+            max-width: 300px;
+            color: white;
+            font-size: 24px;
+            .socialLinkContainer{
+                display: flex;
+                justify-content: space-between;
+                margin: 5% 0; 
+            }
+           .linksContainer{
+              margin-top: 5%;
+            .linkSpan{
+                font-size: 30px;
+                color: yellow;
+                text-align: center;
+            }
+            .navLinks{
+                color: white;
+                font-size: 17px;
+                text-decoration: none;
+            }
+           }
+        }
+        .contacts{
+            width: 40%;
+            max-width: 400px;
+            color: white;
+            font-size: 24px;
+            .contactContainer{
+                display: flex;
+                gap: 10%;
+                margin-top: 10%;
+            }    
+        }
+    }
+}

@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+@mixin homeMain{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(51, 61, 161);
+    padding: 1% 0;
+    }
+.homePage{
+    @include homeMain;
+    .homeWrap{
+        width: 90%;
+        max-width: 1300px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .homeInfo{
+            width: 45%;
+            max-width: 588px;
+            display: flex;
+            flex-direction: column;
+            padding: 10% 2%;
+            
+            .welcome{
+                display: flex;
+                align-items: center;
+                gap:2%;
+                .spanBar{
+                    background-color: yellow;
+                    height: 1px;
+                    width: 6%;
+                }
+                h6{
+                    color: white;
+                    font-size: 21px;
+                }
+            }
+            .titleText{
+               
+                h1{
+                    color: white;
+                    font-size: 64px;
+                    font-weight: 400;
+                }
+                p{
+                    color: white;
+                    font-family: inter;
+                    font-size: 25px;
+                    font-weight: 100;
+                    text-align: center;
+                    margin: 10% 0;
+                }
+            }
+            .orderWrap{
+                display: flex;
+                gap: 20%;
+                align-items: center;
+                margin-bottom: 10%;
+                .order{
+                    background-color: yellow;
+                    width: 42%;
+                    height: 65px;
+                    max-width: 222px;
+                    font-size: 25px;
+                    font-weight: 200;
+                }
+                a{
+                    color: white;
+                    font-size: 25px;
+                }
+            }
+            .producstInfo{
+                display: flex;
+                flex-wrap: wrap;
+                .produktInfoContainer{
+                    max-width: 169px;
+                    min-width: 110px;
+                    width: 32%;
+                    display: flex;
+                    .pointContainer{
+                        margin-right: 5%;
+                    }
+                    .productTextBox{
+                       
+                    .productParam{
+                        color: white;
+                        font-size: 24px;
+                        margin-bottom: 15%;
+                    }
+                    .productValue{
+                        color: white;
+                        font-size: 17px;
+                    }
+                  }
+                }
+            }
+        }
+    }
+}
