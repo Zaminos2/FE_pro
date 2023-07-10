@@ -21,7 +21,10 @@ const navLinks = [
 ]
 document.querySelectorAll(".navLinks").forEach((element,i)=>{
     element.textContent = navLinks[i];
+    
 })
+
+
 const contactTitle = [
     "Address:",
     "Mail:",

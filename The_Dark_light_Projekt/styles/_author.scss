@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+.author{
+    display: flex;
+    justify-content: center;
+    padding: 1% 0;
+    .authorProducts{
+        width: 90%;
+        max-width: 1300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .authorBooks{
+            font-size: 42px;
+        }
+        .divideBar{
+            width: 50px;
+            height: 1px;
+            background-color: yellow;
+        }
+        .productWrap{
+            display: flex;
+            .produktItem{
+                width: 46%;
+                display: flex;
+                .itemImg{
+                    width: 45%;
+                    min-width: 285px;
+                    height: 382px;
+                    background-position: center;
+                    background-size: cover;
+                }
+                .itemDescr{
+                    width: 46%;
+                }
+            }
+        }
+
+    }
+}
