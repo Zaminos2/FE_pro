@@ -1,3 +1,7 @@
+const navigationScript = document.createElement("script");
+navigationScript.src = "../scripts/navigation.js";
+document.body.appendChild(navigationScript);
+
 const navMain = document.querySelector("body");
 const navLoc = "/C:/Users/Tel-ran.de/Desktop/FE_pro/The_Dark_light_Projekt/components/navBar.html"
 // if(location.pathname === navLoc){
