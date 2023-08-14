@@ -1,0 +1,235 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+/* header */
+.header{
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 3;
+}
+.headerWrap{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.headerContainer{
+    width: 58%;
+    max-width: 1116px;
+    display: flex;
+    justify-content: space-between;
+}
+.logoWrap{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.logoImg{
+    width: 40px;
+    height: 40px;
+    background-image: url(../asets/icons/logo.svg);
+}
+.logoName{
+    font-size: 40px;
+    color: rgb(45, 45, 243);
+}
+.linkWrap{
+    display: flex;
+    width: 60%;
+    max-width: 671px;
+    gap: 20%;
+    align-items: center;
+}
+.navLinks{
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+    font-weight: 300;
+}
+/* fistSlider */
+.sitySliderWrap{
+    height: 670px;
+    display: flex;
+    padding: 20% 0 ;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../asets/images/Rectangle.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;;
+}
+.slider{
+    position: relative;
+    width:1110px;
+    height:620px;
+    display: flex;
+    overflow: hidden;
+    z-index: 0;
+}
+.slide{ 
+   width: 1110px;
+}
+.sliderline{
+    height: 100%;
+    display: flex;
+    position: absolute;
+    z-index: 1;
+}
+.selectBox{
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    width: 160px;
+    height: 10px;
+    z-index: 2;
+}
+.selectButton{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: none;
+}
+.biasContainer{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+}
+.slideText{
+    font-size: 50px;
+    color:white;
+    font-weight: 700;
+}
+
+.directionalButton{
+    opacity: 0.5;
+    width: 60px;
+    height: 60px;
+    font-size: 20px;
+    color: rgba(rgb(247, 244, 244), rgb(245, 248, 245), rgb(244, 244, 248),0.5);
+}
+.slideButton{
+    color: white;
+    background-color:rgb(45, 45, 243);
+    width: 270px;
+    height: 60px;
+    padding: 19px;
+    margin: 80px 0 120px;
+}
+/* productSection */
+.oruSpecialsContainer{
+ display: flex;
+ justify-content: center;
+ padding: 10% 0;
+}
+.specialsWrap{
+    display: flex;
+    flex-direction: column;
+    width: 58%;
+}
+.desclabel{
+    font-size: 18px;
+    color: rgb(183, 185, 187);
+}
+.sectionTitle{
+    font-size: 48px;
+    font-weight: 700;
+    margin: 5% 0;
+}
+.productWrap{
+    display: flex;
+    flex-wrap: wrap;
+    gap:2%;
+}
+.productCard{
+    position: relative;
+    margin-bottom: 5%;
+    left: 0;
+    top: 0;
+    width: 350px;
+    height: 360px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+}
+.productText{
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    z-index: 2;
+}
+.productInnerLayer{
+    position: absolute;
+    z-index: 2;
+    background-color: rgba(87, 59, 248, 0.3);
+    min-width: 100%;
+    min-height: 100%;
+    opacity: 0;
+}
+.productInnerLayer:hover{
+   opacity: 1;
+}
+/* about section */
+.aboutWrap{
+    display: flex;
+    justify-content: center;
+}
+.companyName{
+    font-size: 48px;
+    font-weight: 700;
+    margin: 5% 0;
+    color: blue;
+}
+.productCount{
+    font-size: 48px;
+    font-weight: 700;
+}
+.serviceDescr{
+    font-size: 20px;
+    font-weight: 500;
+    margin: 30px 0;
+}
+.aboutContainer{
+    display: flex;
+    max-width: 1110px;
+    width: 58%;
+    gap: 1%;
+    flex-wrap: wrap;
+}
+.aboutInfo{
+    width: 50%;
+    min-width: 550px;
+}
+.aboutProducts{
+    width: 48%;
+    min-width: 540px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3%;
+}
+.aboutProductCard{
+    width: 255px;
+    margin-bottom: 5%;
+    padding: 5%;
+    background-color: rgb(175, 173, 173);
+}
+.activeCard{
+    background-color: blue;
+    color: white;
+}
+.whiteText{
+    color: white;
+}
+/* our specials */
+
+.specialSlider{}
