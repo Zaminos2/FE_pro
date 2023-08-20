@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+.headerWrap{
+    background-color: #272727;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.navBar{
+    display: flex;
+    position: relative;
+    top: 0;
+    z-index: 0;
+}
+.navLinks{
+    display: flex;
+    min-width:93%;
+    justify-content: space-between
+}
+.logo{
+    width: 184px;
+    height: 63px;
+    background-image: url(../asets/icons/Logo1.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.consultWrap{
+    display: flex;
+    width: 450px;
+    justify-content: space-between;
+    align-items: center;
+}
+.linkWrap{
+    width: 643px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.headLinks{
+    color: white;
+    font-size: 19px;
+    font-weight: 500;
+    margin-right: 40px;
+    text-decoration: none;
+}
+.headLinks:hover{
+    color: yellow;
+}
+.consult{
+    width: 165px;
+    height: 41px;
+    background-color: yellow;
+    border: none;
+}
+.langChoise{
+    color: #929292;
+    font-weight: 400;
+    font-size: 17px;
+    background-color: transparent;
+    width: 17px;
+    height: 17px;
+    border: none;
+}
+.translateWrap{
+    width: 64px;
+    display: flex;
+    gap: 30px;
+}
+.infoText{
+   color: white;
+   font-size: 14;
+   font-weight: 500; 
+}
+.howerContainer{
+    background-color: #272727;
+    width: 250px;
+    position: absolute;
+    left: 0;
+    bottom: -1;
+    z-index: 1;
+    border-radius: 18px;
+}
+.linkContainer{
+    padding: 9px 20px;
+    color: white;
+}
+.linkContainer:hover{
+    background-color: yellow;
+    color: #272727;
+    border-radius: 18px;
+}
+.linkContainer:hover .howerLinks{
+    color: #272727;
+}
+.howerLinks{
+    text-decoration: none;
+    font-size: 17;
+    color: white;
+}
