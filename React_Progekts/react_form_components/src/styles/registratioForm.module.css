@@ -3,3 +3,15 @@
     padding: 0;
     box-sizing: border-box;
 }
+.formWrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.regForm{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    background-color: aquamarine;
+    padding: 30px;
+}

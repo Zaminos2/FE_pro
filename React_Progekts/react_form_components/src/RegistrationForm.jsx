@@ -1,4 +1,4 @@
-import {registrationForm} from "./styles/registratioForm.module.css"
+import registrationForm from "./styles/registratioForm.module.css"
 import { useEffect, useState } from "react";
 import {useForm} from "react-hook-form";
 function RegistrationForm(){
@@ -56,17 +56,20 @@ function RegistrationForm(){
       }
       function useSubmit(data){
         SetUserdata(data)
-        console.log(data)
+        console.log(data);
       }
      
     
       return   (
-        <div >
-          <form onSubmit={handleSubmit(useSubmit)}>
+        <div className={registrationForm.formWrap} >
+          <form onSubmit={handleSubmit(useSubmit)} className={registrationForm.regForm}>
+            <label htmlFor="first_name">Name</label>
             <input  className="nameinput"{...register("first_name",nameValidation)}></input>
+            <label htmlFor="last_name">Last name</label>
             <input  className="nameinput"{...register("last_name",nameValidation)}></input>
-            <input className="nameInput"{...register("email",emailValidation)}></input>
-            <input className="nameInput"{...register("password",passwordvalidation)}></input>
+            <input className="nameInput"{...register("email",emailValidation)} type="email" placeholder="email"></input>
+            <input className="nameInput"{...register("password",passwordvalidation)}type="password" placeholder="pasword"></input>
+            <label htmlFor="checkbox">I agree for anything</label>
             <input type="checkbox" onChange={onCheckbox} ></input>
             <input type="submit" value="Submit" disabled={!isChecked}></input>
           </form>
