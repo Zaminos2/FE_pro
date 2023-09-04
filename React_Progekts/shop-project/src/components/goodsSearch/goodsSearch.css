@@ -1,0 +1,22 @@
+.listWrap{
+    width: 68%;
+    background-color: white;
+    max-height: 10rem;
+    overflow: scroll;
+    border-radius: 12px;
+    box-shadow: 0 0 8 px rgb(26, 25, 23);
+}
+.goodsImg{
+    width: 40px;
+    height: 40px;
+    background-position: center;
+    background-size: cover;
+}
+.productWraper{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.goodsCard{
+    width: 20%;
+}

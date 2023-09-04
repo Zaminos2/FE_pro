@@ -22,7 +22,7 @@ function App() {
   function onSubmit(data){
     setUserInputs(data)
   }
-  console.log(goodsList);
+
   function pageChoise(menu){
       switch(menu){
         case 1:
