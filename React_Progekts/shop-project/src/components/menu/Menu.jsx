@@ -1,5 +1,6 @@
 import { useState } from "react"
 import {choiseButtons} from "../../utils"
+import "./menu.css"
 
 export default function Menu({data,choiseMenu,setMenu}){
     
@@ -11,6 +12,7 @@ export default function Menu({data,choiseMenu,setMenu}){
        <div className="messageWrap">
         <p>пользователь</p>
         <h3>{data[0].name}</h3>
+        <p className="systemMesage">Приложение находится в стадии "альфа" и финальный продукт может отличатся просим следить за обновлениями</p>
        </div>
        <div className="choiseWrap">
         {choiseButtons.map((el,ind)=>(

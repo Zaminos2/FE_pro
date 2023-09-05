@@ -6,6 +6,7 @@ import {usersDb} from "./utils";
 import ModalError from './components/logInForm/ModalError';
 import Menu from './components/menu/Menu';
 import GoodsSearch from './components/goodsSearch/GoodsSearch';
+import Basket from './components/basket/Basket';
 
 
 function App() {
@@ -38,6 +39,10 @@ function App() {
         case 3:
           return<>
           <GoodsSearch goods={goods} setGoods={setGoods} goodsList={goodsList} setGoodsList={setGoodsList}/>
+          </>
+        case 5:
+          return<>
+          <Basket/>
           </>
     }
   }
