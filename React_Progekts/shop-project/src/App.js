@@ -12,8 +12,8 @@ import EditUser from './components/EditUser/EditUser';
 
 function App() {
   const [menu,setMenu] = useState(1)
-  const [userInputs,setUserInputs] = useState({})
-  const [userData,setUserData] = useState({})
+  const [userInputs,setUserInputs] = useState([])
+  const [userData,setUserData] = useState([])
   const [isExist,setIsExist] = useState(false);
   const [goods,setGoods] = useState('');
   const [goodsList,setGoodsList] = useState([])

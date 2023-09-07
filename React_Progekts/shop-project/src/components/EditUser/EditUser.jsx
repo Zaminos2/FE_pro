@@ -24,7 +24,7 @@ export default function EditUser({choiseMenu}){
     function handleChangeUser(event,key){
         let{value} = event.target;
       
-        setUserData(value)
+        setUserData(prevUserData=>({...prevUserData,[key]:value}))
     }
    
     function renderProfile(data){
@@ -57,7 +57,7 @@ export default function EditUser({choiseMenu}){
         <button onClick={()=>{choiseMenu(2)}}>x</button>
         <div className="profileInfo">
         <Accordion flush>
-        {renderProfile(userData)}
+        {renderProfile(getUserData())}
         </Accordion>
         </div>
     </div>
