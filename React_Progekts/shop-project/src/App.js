@@ -7,6 +7,7 @@ import ModalError from './components/logInForm/ModalError';
 import Menu from './components/menu/Menu';
 import GoodsSearch from './components/goodsSearch/GoodsSearch';
 import Basket from './components/basket/Basket';
+import EditUser from './components/EditUser/EditUser';
 
 
 function App() {
@@ -39,6 +40,10 @@ function App() {
         case 3:
           return<>
           <GoodsSearch goods={goods} setGoods={setGoods} goodsList={goodsList} setGoodsList={setGoodsList}/>
+          </>
+        case 4:
+          return<>
+          <EditUser  choiseMenu={setMenu}/>
           </>
         case 5:
           return<>

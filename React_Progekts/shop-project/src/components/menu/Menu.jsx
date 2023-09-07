@@ -3,6 +3,7 @@ import {choiseButtons} from "../../utils"
 import "./menu.css"
 
 export default function Menu({data,choiseMenu,setMenu}){
+    console.log(data);
     
 
     return (
