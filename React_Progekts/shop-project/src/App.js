@@ -8,6 +8,7 @@ import Menu from './components/menu/Menu';
 import GoodsSearch from './components/goodsSearch/GoodsSearch';
 import Basket from './components/basket/Basket';
 import EditUser from './components/EditUser/EditUser';
+import {Context} from "./utils"
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
   const [isExist,setIsExist] = useState(false);
   const [goods,setGoods] = useState('');
   const [goodsList,setGoodsList] = useState([])
+  const[basketGoods,setBasketGoods]=useState([])
   const qeryUrl = `username=${userInputs.userName}&email=${userInputs.email}`
 
 
@@ -39,7 +41,7 @@ function App() {
           </>
         case 3:
           return<>
-          <GoodsSearch goods={goods} setGoods={setGoods} goodsList={goodsList} setGoodsList={setGoodsList}/>
+          <GoodsSearch goods={goods} setGoods={setGoods} goodsList={goodsList} setGoodsList={setGoodsList} setBasketGoods={setBasketGoods} setMenu={setMenu}/>
           </>
         case 4:
           return<>
@@ -47,7 +49,7 @@ function App() {
           </>
         case 5:
           return<>
-          <Basket/>
+          <Basket setMenu={setMenu} basketGoods={basketGoods} setBasketGoods={setBasketGoods}/>
           </>
     }
   }
@@ -57,8 +59,14 @@ function App() {
    .then(response=>response.json())
    .then(data=>{
     if(data.length>0){
-      setUserData(data);
-      localStorage.setItem('user',JSON.stringify(data))
+      const{name,address,email,phone,username,website,company}= data[0] 
+      const{street,suite,city,zipcode,geo}=address
+      const{lat,lng}=geo
+      const{catchPhrase,bs}= company
+      const companyName = company.name
+      const userData = {name,email,street,suite,city,zipcode,lat,lng,companyName,catchPhrase,bs,phone,username,website}
+      setUserData(userData);
+      localStorage.setItem('user',JSON.stringify(userData))
       setMenu(2)
     }else{
       setIsExist(true);
@@ -70,9 +78,11 @@ function App() {
     })
   },[userInputs])
   return<>
+  <Context.Provider>
   <div className='main'>
   {pageChoise(menu)}
   </div>
+  </Context.Provider>
   </>
 }
 

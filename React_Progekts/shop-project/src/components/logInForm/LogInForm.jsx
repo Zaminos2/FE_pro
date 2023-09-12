@@ -1,4 +1,4 @@
-import { useForm, SubmitHandler } from "react-hook-form";
+import { useForm } from "react-hook-form";
 import './loginForm.css'
 
 export default function LogInForm({ onSubmit }) {

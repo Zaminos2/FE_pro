@@ -1,15 +1,18 @@
-import { useEffect } from 'react'
+import { useEffect,useState } from 'react'
 import {goodsDb} from '../../utils'
 import './goodsSearch.css'
 import { v4 } from 'uuid'
 
 
-export default function GoodsSearch({goods,setGoods,goodsList,setGoodsList}){
-
+export default function GoodsSearch({goods,setGoods,goodsList,setGoodsList,setBasketGoods,setMenu}){
+  
+    function addToBasket(element){
+      setBasketGoods((prevBasketGoods)=>[...prevBasketGoods,element])
+    }
+    
     function handleSearch(event){
         setGoods(event.target.value)
     }
-    console.log(goodsList)
     useEffect(() => {
         try{
         if (goods) {
@@ -49,8 +52,7 @@ export default function GoodsSearch({goods,setGoods,goodsList,setGoodsList}){
                     <p>{el.id}</p>
                     <p>{el.title}</p>
                     <div className='buttonContainer'>
-                        <button>+</button>
-                        <button>-</button>
+                        <button onClick={()=>{addToBasket(el)}}>+</button>
                     </div>
                 </div>
             ))
@@ -61,6 +63,10 @@ export default function GoodsSearch({goods,setGoods,goodsList,setGoodsList}){
     return(<>
         <div className='searchWrap'>
             <input type="text" onChange={handleSearch} />
+            <div>
+              <button onClick={()=>setMenu(2)}>Вернутся в меню</button>
+              <button onClick={()=>setMenu(5)}>Прейти в корзину</button>
+            </div>
         </div>
         <div >
             {goodsList.length>0&&listRender()}

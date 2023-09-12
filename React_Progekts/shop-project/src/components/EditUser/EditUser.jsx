@@ -1,10 +1,23 @@
 import { v4 } from "uuid";
 import Accordion from 'react-bootstrap/Accordion'
 import { useEffect, useState } from "react";
+import {useForm} from 'react-hook-form'
 
 export default function EditUser({choiseMenu}){
     const [userData,setUserData]=useState(getUserData())
+    const [isRender,setIsRender]=useState(false);
     console.log(userData);
+
+ 
+    const {
+        register
+      } = useForm();
+      useEffect(()=>{
+        console.log(userData);
+        localStorage.setItem('user',JSON.stringify(userData))
+    },[userData])
+    
+    
 
     function getUserData(){
         const data = localStorage.getItem('user');
@@ -17,26 +30,20 @@ export default function EditUser({choiseMenu}){
         }
         return {}
     }
+    function editUserHandler(key, value) {
+        const updatedData = { ...userData, [key]: value };
+        const updatedDataJSON = JSON.stringify(updatedData);
+        localStorage.setItem('user', updatedDataJSON);
+        setUserData(JSON.parse(updatedDataJSON));
+      }
     useEffect(()=>{
-        localStorage.setItem('user',JSON.stringify(userData))
-    },[userData])
+        setIsRender(true)
+    },[isRender])
 
-    function handleChangeUser(event,key){
-        let{value} = event.target;
-      
-        setUserData(prevUserData=>({...prevUserData,[key]:value}))
-    }
    
     function renderProfile(data){
         return Object.entries(data).map(([key,value],ind)=>{
-            if(typeof value === 'object'){
-                return(
-                   <div key={v4()}>
-                    <p>{key}</p>
-                    {renderProfile(value)}
-                   </div>
-                )
-            }else if(key==='id'||key==='username'||key==='email'){
+            if(key==='id'||key==='username'||key==='email'){
                 return <div key={v4()}>
                     <p>{key}:{value}</p>
                 </div>
@@ -45,7 +52,14 @@ export default function EditUser({choiseMenu}){
                     <Accordion.Item key={v4()} eventKey={`${ind}-${key}`}>
                         <Accordion.Header>{key}:{value}</Accordion.Header>
                         <Accordion.Body>
-                            <input type="text" defaultValue={userData[key]} name={key} key={v4()} onChange={(event)=>handleChangeUser(event,key)} />
+                            <input type="text"
+                             defaultValue={value}
+                              {...register(key)} key={v4()}
+                               onKeyDown={(event)=>{
+                                if(event.keyCode===13){
+                                    editUserHandler(key,event.target.value);
+                                }
+                            }}/>
                         </Accordion.Body>
                     </Accordion.Item>
                 )
@@ -56,9 +70,11 @@ export default function EditUser({choiseMenu}){
     <div className="userMain">
         <button onClick={()=>{choiseMenu(2)}}>x</button>
         <div className="profileInfo">
+        <form className="editUserInfo">
         <Accordion flush>
-        {renderProfile(getUserData())}
+        {renderProfile(userData)}
         </Accordion>
+        </form>
         </div>
     </div>
     )
