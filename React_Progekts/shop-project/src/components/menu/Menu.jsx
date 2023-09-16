@@ -1,6 +1,7 @@
-import { useState } from "react"
+
 import {choiseButtons} from "../../utils"
 import "./menu.css"
+import {CloseCircleOutlined} from '@ant-design/icons'
 
 export default function Menu({data,choiseMenu,setMenu}){
    
@@ -8,7 +9,7 @@ export default function Menu({data,choiseMenu,setMenu}){
 
     return (
     <div className="menuwrap">
-        <button className="closebutton" onClick={()=>setMenu(1)}>x</button>
+        <CloseCircleOutlined className="closeButton" onClick={()=>{setMenu(1)}}/>
        <h1>Добро пожаловать!</h1>
        <div className="messageWrap">
         <p>пользователь</p>

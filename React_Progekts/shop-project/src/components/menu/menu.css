@@ -2,5 +2,50 @@
     color: white;
 }
 .menuwrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     max-width: 68%;
+    border-radius: 12px;
+    box-shadow: 0 0 8px rgb(28, 25, 25);
+    background-color: rgb(175, 175, 175);
+    padding: 20px;
+    position: relative;
+    top: 0;
+    z-index: 0;
+}
+.choiseWrap{
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.choiseButton{
+    border-radius: 14px;
+    border: none;
+    padding: 5px;
+}
+.closeButton{
+    border-radius: 50%;
+    border: none;
+    height: 20px;
+    width: 20px;
+    font-size: 20px;
+    position: absolute;
+    color: white;
+    z-index: 1;
+    right: 10px;
+    top:10px;
+}
+.closeButton:active{
+    transform: scale(0.90);
+    transition: transform 0.1s ease;
+}
+.choiseButton:active{
+    transform: scale(0.90);
+    transition: transform 0.1s ease;
+}
+.choiseButton:hover{
+    background-color: black;
+    color: white;
 }

@@ -1,7 +1,9 @@
 import { v4 } from "uuid";
+import './editUser.css'
 import Accordion from 'react-bootstrap/Accordion'
 import { useEffect, useState } from "react";
 import {useForm} from 'react-hook-form'
+import {CloseCircleOutlined} from '@ant-design/icons'
 
 export default function EditUser({choiseMenu}){
     const [userData,setUserData]=useState(getUserData())
@@ -68,7 +70,7 @@ export default function EditUser({choiseMenu}){
     }
     return (
     <div className="userMain">
-        <button onClick={()=>{choiseMenu(2)}}>x</button>
+        <CloseCircleOutlined className="closeButton" onClick={()=>{choiseMenu(2)}}/>
         <div className="profileInfo">
         <form className="editUserInfo">
         <Accordion flush>

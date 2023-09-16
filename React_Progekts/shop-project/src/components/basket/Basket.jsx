@@ -1,14 +1,20 @@
 import { v4 } from 'uuid'
+import './basket.css'
+import {CloseCircleOutlined} from '@ant-design/icons'
 
-export default function Basket({setMenu,basketGoods,setBasketGoods}){
-    function removeFromBasket(item){
-        setBasketGoods((prevBasketGoods)=>prevBasketGoods.filter((el)=>el.id!==item.id))
+export default function Basket({setMenu,basketGoods,setBasketGoods,choiseMenu}){
+    function removeFromBasket(key){
+        setBasketGoods((prevBasketGoods) => {
+            return prevBasketGoods.filter((element)=>element.key!==key)
+          });
     }
     return (
         <div className="basketContainer">
-            <button onClick={()=>{setMenu(2)}}>Главное меню</button>
-            <button onClick={()=>{setMenu(3)}}>Поиск товара</button>
-            <button onClick={()=>{setMenu(1)}}>X</button>
+            <div className='choiseWrap'>
+            <button className="choiseButton" onClick={()=>{setMenu(2)}}>Главное меню</button>
+            <button className="choiseButton" onClick={()=>{setMenu(3)}}>Поиск товара</button>
+            </div>
+            <CloseCircleOutlined className="closeButton" onClick={()=>{choiseMenu(1)}}/>
             <div className="renderContainer">
             {basketGoods.map((el)=>(
                 <div key={v4()} className='goodsCard'>
@@ -17,13 +23,11 @@ export default function Basket({setMenu,basketGoods,setBasketGoods}){
                     <p>{el.id}</p>
                     <p>{el.title}</p>
                     <div className='buttonContainer'>
-                        <button onClick={()=>{removeFromBasket(el)}}>-</button>
+                        <button className='basketButton' onClick={()=>removeFromBasket(el.key)}>-</button>
                     </div>
                 </div>
             ))}
             </div>
         </div>
     )
-    
-
 }

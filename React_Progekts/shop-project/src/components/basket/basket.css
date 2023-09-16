@@ -1,0 +1,25 @@
+.basketContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 68vw;
+    height: 6rem;
+    border-radius: 12px;
+    box-shadow: 0 0 8px rgb(28, 25, 25);
+    background-color: rgb(175, 175, 175);
+    padding: 40px 20px 20px;
+    position: relative;
+    top: 0;
+    z-index: 0;
+}
+.renderContainer{
+    width: 68%;
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-radius: 12px;
+    box-shadow: 0 0 8px rgb(28, 25, 25);
+    background-color: rgb(175, 175, 175);
+    padding: 2rem;
+}

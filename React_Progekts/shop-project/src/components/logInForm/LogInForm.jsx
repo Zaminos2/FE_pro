@@ -17,7 +17,7 @@ export default function LogInForm({ onSubmit }) {
       >
         <label htmlFor="userName">User Name</label>
         <input
-          className="userInput"
+          className='input'
           {...register("userName", {
             required: "This field is required",
             minLength: {
@@ -34,7 +34,7 @@ export default function LogInForm({ onSubmit }) {
         {errors.userName && <p>{errors.userName.message}</p>}
         <label htmlFor="email">Email</label>
         <input
-          className="userInput"
+          className='input'
           {...register("email", {
             required: "This field is required",
             pattern: {

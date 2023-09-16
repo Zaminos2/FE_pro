@@ -19,6 +19,7 @@ function App() {
   const [goods,setGoods] = useState('');
   const [goodsList,setGoodsList] = useState([])
   const[basketGoods,setBasketGoods]=useState([])
+  console.log(basketGoods);
   const qeryUrl = `username=${userInputs.userName}&email=${userInputs.email}`
 
 
@@ -49,7 +50,7 @@ function App() {
           </>
         case 5:
           return<>
-          <Basket setMenu={setMenu} basketGoods={basketGoods} setBasketGoods={setBasketGoods}/>
+          <Basket setMenu={setMenu} basketGoods={basketGoods} setBasketGoods={setBasketGoods} choiseMenu={setMenu}/>
           </>
     }
   }
@@ -64,7 +65,7 @@ function App() {
       const{lat,lng}=geo
       const{catchPhrase,bs}= company
       const companyName = company.name
-      const userData = {name,email,street,suite,city,zipcode,lat,lng,companyName,catchPhrase,bs,phone,username,website}
+      const userData = {email,username,name,street,suite,city,zipcode,lat,lng,companyName,catchPhrase,bs,phone,website}
       setUserData(userData);
       localStorage.setItem('user',JSON.stringify(userData))
       setMenu(2)
@@ -78,11 +79,11 @@ function App() {
     })
   },[userInputs])
   return<>
-  <Context.Provider>
+
   <div className='main'>
   {pageChoise(menu)}
   </div>
-  </Context.Provider>
+ 
   </>
 }
 
